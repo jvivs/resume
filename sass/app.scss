@@ -62,8 +62,8 @@
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	&.secondary {
 		@extend .subheader;
-		border-bottom: 1px solid $primary-color;
-		background: lighten($primary-color, 30%);
+		background: $primary-color;
+		color: white;
 	}
 }
 
@@ -125,15 +125,23 @@
 @media print {
 
 	#professional\-experience {
+		> .secondary {
+			margin-top: 0;
+			border-top: 1px solid #ccc;
+		}
 		header p {
 			margin-bottom: .75em;
 		}
 	}
 
-
 	.h1, .h2, .h3, .h4, .h5, .h6 {
 		&.secondary {
-			border-bottom-color: #ccc;
+			border: 1px solid #ccc;
+			border-left: 0;
+			border-right: 0;
+			border-top: 0;
+			background: transparent;
+			color: #666;
 		}
 	}
 	#masthead {
