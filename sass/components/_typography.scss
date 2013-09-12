@@ -1,0 +1,37 @@
+.h1 {
+	@extend h1;
+}
+
+.h2 {
+	@extend h2;
+}
+
+.h3 {
+	@extend h3;
+}
+
+.h4 {
+	@extend h4;
+}
+
+.h5 {
+	@extend h5;
+}
+
+.h6 {
+	@extend h6;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	&.secondary {
+		@extend .subheader;
+	}
+}
+
+.text-normal {
+	font-weight: normal;
+}
+
+.text-small {
+	font-size: emCalc(14);
+}
