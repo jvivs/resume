@@ -1,0 +1,10 @@
+//div.vcard {
+//	display: block
+//}
+
+.vcard {
+	border: none;
+	h1.fn {
+		@extend h1;
+	}
+}
