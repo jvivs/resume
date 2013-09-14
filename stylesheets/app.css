@@ -7506,36 +7506,47 @@ s,m,l,x,n = small(5px),medium(10px),large(15px),x-large(20px),none(0px)
   padding-bottom: 0.3125em;
 }
 
-/* line 108, ../sass/app.scss */
+/* line 107, ../sass/app.scss */
 #skills dt, #education dt, #additional\-coursework dt, #languages dt {
   margin-bottom: .5em;
 }
-/* line 111, ../sass/app.scss */
+/* line 110, ../sass/app.scss */
 #skills dd, #education dd, #additional\-coursework dd, #languages dd {
   margin-bottom: 0;
 }
-/* line 114, ../sass/app.scss */
+/* line 113, ../sass/app.scss */
 #skills dd, #education dd, #additional\-coursework dd, #languages dd {
   margin-left: 1.25em;
 }
 
-/* line 120, ../sass/app.scss */
+/* line 119, ../sass/app.scss */
 #skills dt:after {
   content: ': ';
 }
 
+/* line 124, ../sass/app.scss */
+.page-break {
+  display: none;
+}
+
 @media print {
-  /* line 128, ../sass/app.scss */
+  /* line 129, ../sass/app.scss */
+  .page-break {
+    display: block;
+    page-break-before: always;
+  }
+
+  /* line 135, ../sass/app.scss */
   #professional\-experience > .secondary {
     margin-top: 0;
     border-top: 1px solid #ccc;
   }
-  /* line 132, ../sass/app.scss */
+  /* line 139, ../sass/app.scss */
   #professional\-experience header p {
     margin-bottom: .75em;
   }
 
-  /* line 138, ../sass/app.scss */
+  /* line 145, ../sass/app.scss */
   .h1.secondary, .h2.secondary, .h3.secondary, .h4.secondary, .h5.secondary, .h6.secondary {
     border: 1px solid #ccc;
     border-left: 0;
@@ -7545,25 +7556,30 @@ s,m,l,x,n = small(5px),medium(10px),large(15px),x-large(20px),none(0px)
     color: #666;
   }
 
-  /* line 148, ../sass/app.scss */
+  /* line 155, ../sass/app.scss */
   #masthead .vcard {
     padding-top: 0;
   }
-  /* line 151, ../sass/app.scss */
+  /* line 158, ../sass/app.scss */
   #masthead h1, #masthead .h1 {
     margin-top: 0;
   }
 
-  /* line 157, ../sass/app.scss */
+  /* line 163, ../sass/app.scss */
   #professional\-experience p, #desired-experience p {
     font-size: 0.875em;
   }
-  /* line 160, ../sass/app.scss */
+  /* line 166, ../sass/app.scss */
   #professional\-experience a, #desired-experience a {
     text-decoration: none;
   }
 
-  /* line 165, ../sass/app.scss */
+  /* line 171, ../sass/app.scss */
+  #desired-experience aside p {
+    margin-bottom: 0;
+  }
+
+  /* line 176, ../sass/app.scss */
   #skills dl, #education dl, #additional\-coursework dl, #languages dl {
     *zoom: 1;
     margin-bottom: .25em;
@@ -7578,27 +7594,26 @@ s,m,l,x,n = small(5px),medium(10px),large(15px),x-large(20px),none(0px)
   #skills dl:after, #education dl:after, #additional\-coursework dl:after, #languages dl:after {
     clear: both;
   }
-  /* line 170, ../sass/app.scss */
+  /* line 181, ../sass/app.scss */
   #skills dt, #skills dd, #education dt, #education dd, #additional\-coursework dt, #additional\-coursework dd, #languages dt, #languages dd {
     float: left;
     padding-right: .25em;
     margin: 0;
   }
-  /* line 175, ../sass/app.scss */
+  /* line 186, ../sass/app.scss */
   #skills dt, #education dt, #additional\-coursework dt, #languages dt {
     margin-right: .2em;
   }
-
-  /* line 181, ../sass/app.scss */
-  #skills dd:after, #languages dd:after {
+  /* line 190, ../sass/app.scss */
+  #skills dd:after, #education dd:after, #additional\-coursework dd:after, #languages dd:after {
     content: ', ';
   }
-  /* line 184, ../sass/app.scss */
-  #skills dd:last-child:after, #languages dd:last-child:after {
+  /* line 193, ../sass/app.scss */
+  #skills dd:last-child:after, #education dd:last-child:after, #additional\-coursework dd:last-child:after, #languages dd:last-child:after {
     content: '';
   }
 
-  /* line 191, ../sass/app.scss */
+  /* line 200, ../sass/app.scss */
   #education dt:after, #additional\-coursework dt:after {
     content: ' -';
   }
